@@ -1,3 +1,7 @@
+// Limeira, SP - 27/06/2026: (Placa na Casa do Sítio - Controla as duas receptoras)
+// A página web continuará centralizada no seu celular, mas agora ela enviará códigos
+// distintos para cada destino.
+
 #include <WiFi.h>
 #include <SPI.h>
 #include <LoRa.h>

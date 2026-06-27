@@ -1,3 +1,8 @@
+// Limeira, SP - 27/06/2026: (Placa Exclusiva n,a Bomba d'Água)
+// Esta placa usará o módulo de 1 canal conectado ao pino 13 para acionar a contatora da bomba. 
+// Ela vai ignorar qualquer mensagem que comece com "POSTE:"
+//
+
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>

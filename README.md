@@ -1,6 +1,12 @@
 # esp32
 
-Esp32 para controle de iluminação e bomba d´água do sítio
+\#Esp32 para controle de iluminação e bomba d´água do sítio.
+
+
+
+Essa arquitetura é excelente para o seu sítio. Ela evita que você precise passar fios longos entre o poste de iluminação e a bomba d'água, deixando cada ponto totalmente isolado a muitos metros de distância da casa.
+
+Para fazer isso funcionar sem que uma placa interfira na outra, usaremos endereços ou prefixos de texto nos comandos de rádio. O emissor enviará o comando para o ar, e cada receptora só executará a ordem se ler o seu próprio nome.
 
 
 
