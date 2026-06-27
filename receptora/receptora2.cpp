@@ -1,3 +1,8 @@
+// Limeira, SP - 27/06/2026: (Placa Exclusiva no Poste de Iluminação)
+// Esta placa usará a outra placa de relés conectada ao pino 13 para acionar a lâmpada de 110V. 
+// Ela ignorará mensagens da "BOMBA:".
+//
+
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>
