@@ -2,6 +2,10 @@
 
 \#Esp32 para controle de iluminação e bomba d´água do sítio.
 
+Esquema elaborado para três placas Heltec WiFi LoRa 32 V2 (modelo de chip integrado HTIT-WB32LA, operando na frequência de 868-915 MHz),
+
+Para ligação da Bomba de 1Cv 220V será preciso uma Contatora de Potência de 220V, a iluminação poderá ser ligada diretamente ao rele, porém, para evitar problemas em caso de melhoria da iluminação (aumento de carga) vou padronizar com uma segunda contatora. 
+
 
 
 Essa arquitetura é excelente para o seu sítio. Ela evita que você precise passar fios longos entre o poste de iluminação e a bomba d'água, deixando cada ponto totalmente isolado a muitos metros de distância da casa.
@@ -84,6 +88,15 @@ Como agora as placas são independentes, a ligação física ficou ainda mais si
   * Fio do pino 5V do ESP32 vai para o VCC do módulo de relé.
   * Fio do pino GND do ESP32 vai para o GND do módulo de relé.
   * Fio do pino GPIO 13 do ESP32 vai para o IN1 do módulo de relé.
+
+
+
+\##🚀 Como testar e usar o sistema na prática:
+
+* Grave o primeiro código na Placa Emissora, o segundo na Placa Receptora da bomba d´água e o terceiro na Placa Receptora da iluminação.
+* Ligue a placa Emissora perto do roteador da casa. Olhe para a telinha OLED dela: ela mostrará um endereço de IP (Exemplo: 192.168.1.15).
+* Pegue seu celular conectado ao mesmo Wi-Fi da casa, abra o navegador de internet (Google Chrome ou Safari) e digite esse número de IP no campo de navegação. O painel de botões aparecerá na tela.
+* Leve a placa Receptora montada junto com os relés para a área externa para testar os acionamentos de rádio.
 
 
 
