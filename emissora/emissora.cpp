@@ -13,8 +13,8 @@
 #define DIO0    26
 #define BAND    915E6
 
-const char* ssid     = "NOME_DA_SUA_REDE_WIFI";
-const char* password = "SENHA_DO_WIFI";
+const char* ssid     = "mikrotik";
+const char* password = "Linux123pb";
 
 WiFiServer server(80);
 SSD1306Wire display(0x3c, 4, 15);
